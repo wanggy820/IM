@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1049591674964",
+    "project_id": "boss-im",
+    "storage_bucket": "boss-im.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1049591674964:android:f7b42f004c8077c9df55c1",
+        "android_client_info": {
+          "package_name": "com.tojoy.chat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1049591674964-jb2m57mkgc918irl95qhmtk1h4bneakm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tojoy.chat",
+            "certificate_hash": "279a3a906ee7c9686ee698ff93a48826413a1d3f"
+          }
+        },
+        {
+          "client_id": "1049591674964-j8fa1np4cts474rm5shussrsib96fd9m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEjJMO2_vTcb1Y_cpmT398suiaA7r79aU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1049591674964-j8fa1np4cts474rm5shussrsib96fd9m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

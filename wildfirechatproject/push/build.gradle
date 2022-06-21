@@ -1,0 +1,63 @@
+apply plugin: 'com.android.library'
+//apply plugin: 'com.google.gms.google-services'
+
+android {
+    compileSdkVersion 29
+
+
+    defaultConfig {
+        minSdkVersion 19
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        manifestPlaceholders = [
+                MI_APP_ID    : "2882303761519947477",
+                MI_APP_KEY   : "5641994746477",
+
+                HMS_APP_ID   : "104374433",
+
+                MEIZU_APP_ID : "141715",
+                MEIZU_APP_KEY: "b7236bf214ab4502a811ddf53e7ff83d",
+
+                VIVO_APP_ID  : "105486305",
+                VIVO_APP_KEY : "03363587e3129039078aeded06421299",
+                VIVO_APP_VERSION : "481",
+                OPPO_APP_KEY  : "205572863d584935ac4aaa67a091c9df",
+                OPPO_APP_SECRET : "3ee2cb232944486391dcc9f53340ada3"
+        ]
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility 1.8
+        targetCompatibility 1.8
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation  files("libs/vivo_pushSDK_v3.0.0.1_481.aar")
+    implementation  files("libs/com.heytap.msp-push-2.1.0.aar")//oppo
+
+    implementation 'com.huawei.hms:push:5.0.2.300'
+
+    implementation 'androidx.appcompat:appcompat:1.0.0-beta01'
+    implementation project(':client')
+    implementation 'com.meizu.flyme.internet:push-internal:4.1.0'
+    implementation platform('com.google.firebase:firebase-bom:28.1.0')
+    implementation 'com.google.firebase:firebase-messaging:22.0.0'
+
+
+    def lifecycle_version = '2.2.0'
+    implementation "androidx.lifecycle:lifecycle-extensions:$lifecycle_version"
+}
