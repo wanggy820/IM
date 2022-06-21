@@ -1,0 +1,12 @@
+include ':chat'
+include ':client',
+    ':push',
+    ':uikit',
+    ':mars-core-release',
+    ':emojilibrary',
+    ':imagepicker',
+//    ':momentclient',
+    ':avenginekit'
+
+//project(':avenginekit').projectDir = new File('../android-av/avenginekit')
+//project(':momentclient').projectDir = new File('../android-momentclient/momentclient')
