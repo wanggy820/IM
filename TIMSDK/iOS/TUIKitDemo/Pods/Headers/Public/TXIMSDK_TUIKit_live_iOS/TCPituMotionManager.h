@@ -1,0 +1,1 @@
+../../../../../TUIKit_live/Classes/modules/BeautySettingPanel/TCBeautyPanel/Model/TCPituMotionManager.h
