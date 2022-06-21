@@ -1,0 +1,14 @@
+CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO
+EXCLUDED_ARCHS[sdk=iphonesimulator*] = arm64
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Bugly" "${PODS_ROOT}/TXIMSDK_iOS" "${PODS_ROOT}/TXLiteAVSDK_TRTC/TXLiteAVSDK_TRTC"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AFNetworking" "${PODS_ROOT}/Headers/Public/CCHMapClusterController" "${PODS_ROOT}/Headers/Public/KxMenu" "${PODS_ROOT}/Headers/Public/MBProgressHUD" "${PODS_ROOT}/Headers/Public/Pinyin" "${PODS_ROOT}/Headers/Public/SDRefeshView" "${PODS_ROOT}/Headers/Public/SDWebImage" "${PODS_ROOT}/Headers/Public/TYAlertController" "${PODS_ROOT}/Headers/Public/Toast" "${PODS_ROOT}/Headers/Public/UITextViewPlaceholder" "${PODS_ROOT}/Headers/Public/YBAttributeTextTapAction" "${PODS_ROOT}/Headers/Public/YLGIFImage" "${PODS_ROOT}/Headers/Public/ZLPhotoBrowser-objc" "${PODS_ROOT}/Headers/Public/amr" ${PODS_ROOT}/TXIMSDK_iOS/ImSDK.framework/Headers/ ${PODS_ROOT}/TXLiteAVSDK_TRTC/TXLiteAVSDK_TRTC/TXLiteAVSDK_TRTC.framework/Headers/
+LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
+OTHER_CFLAGS = $(inherited) -iframework "${PODS_ROOT}/Bugly" -iframework "${PODS_ROOT}/TXIMSDK_iOS" -iframework "${PODS_ROOT}/TXLiteAVSDK_TRTC/TXLiteAVSDK_TRTC"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"c++" -l"resolv" -l"z" -framework "AVFoundation" -framework "Accelerate" -framework "Bugly" -framework "ImSDK" -framework "Security" -framework "SystemConfiguration" -framework "TXLiteAVSDK_TRTC"
+PODS_BUILD_DIR = ${BUILD_DIR}
+PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_PODFILE_DIR_PATH = ${SRCROOT}/..
+PODS_ROOT = ${SRCROOT}/../Pods
+PODS_XCFRAMEWORKS_BUILD_DIR = $(PODS_CONFIGURATION_BUILD_DIR)/XCFrameworkIntermediates
+USE_RECURSIVE_SCRIPT_INPUTS_IN_SCRIPT_PHASES = YES

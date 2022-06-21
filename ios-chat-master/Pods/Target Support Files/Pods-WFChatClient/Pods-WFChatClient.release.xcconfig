@@ -1,0 +1,13 @@
+CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/../wfclient/WFChatClient/Proto"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AFNetworking" "${PODS_ROOT}/Headers/Public/CCHMapClusterController" "${PODS_ROOT}/Headers/Public/KxMenu" "${PODS_ROOT}/Headers/Public/MBProgressHUD" "${PODS_ROOT}/Headers/Public/Pinyin" "${PODS_ROOT}/Headers/Public/SDRefeshView" "${PODS_ROOT}/Headers/Public/SDWebImage" "${PODS_ROOT}/Headers/Public/TYAlertController" "${PODS_ROOT}/Headers/Public/Toast" "${PODS_ROOT}/Headers/Public/UITextViewPlaceholder" "${PODS_ROOT}/Headers/Public/YBAttributeTextTapAction" "${PODS_ROOT}/Headers/Public/YLGIFImage" "${PODS_ROOT}/Headers/Public/ZLPhotoBrowser-objc" "${PODS_ROOT}/Headers/Public/amr"
+LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/amr" "${PODS_ROOT}/../wfclient/WFChatClient/amr"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/amr" -iframework "${PODS_ROOT}/../wfclient/WFChatClient/Proto"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"amr" -l"opencore-amrnb" -framework "mars"
+PODS_BUILD_DIR = ${BUILD_DIR}
+PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_PODFILE_DIR_PATH = ${SRCROOT}/..
+PODS_ROOT = ${SRCROOT}/../Pods
+PODS_XCFRAMEWORKS_BUILD_DIR = $(PODS_CONFIGURATION_BUILD_DIR)/XCFrameworkIntermediates
+USE_RECURSIVE_SCRIPT_INPUTS_IN_SCRIPT_PHASES = YES

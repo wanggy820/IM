@@ -1,0 +1,6 @@
+framework module Pods_WFChatClient {
+  umbrella header "Pods-WFChatClient-umbrella.h"
+
+  export *
+  module * { export * }
+}

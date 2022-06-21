@@ -1,0 +1,74 @@
+#cocoapods  1.8+强制安装了新的源trunk，采用cdn替换了原本的master
+#直接通过cdn方式更新本地库
+source 'https://github.com/CocoaPods/Specs.git'
+#source 'https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git'
+inhibit_all_warnings!
+platform:ios,"10.0"
+
+#use_frameworks!
+workspace 'ios-chat.xcworkspace'
+
+target 'BossCloudIM' do
+  project 'wfchat/WildFireChat.xcodeproj'
+    
+  pod 'Bugly'
+
+  pod 'TXIMSDK_iOS', '~> 5.1.60'
+  pod 'TXLiteAVSDK_TRTC', '~> 8.6.10094'
+
+#  pod 'AVEngine', :path => 'wfuikit/WFChatUIKit/AVEngine'
+  
+end
+
+target 'ShareExtension' do
+  project 'wfchat/WildFireChat.xcodeproj'
+  
+  pod 'AFNetworking', :path => 'wfuikit/WFChatUIKit/Vendor/AFNetworking'
+  pod 'MBProgressHUD', '~> 1.2.0'
+  pod 'SDWebImage'
+  
+end
+
+target 'WFChatUIKit' do
+  project 'wfuikit/WFChatUIKit.xcodeproj'
+
+  
+  pod 'CCHMapClusterController', '~> 1.7.2'
+  pod 'MBProgressHUD', '~> 1.2.0'
+  pod 'SDWebImage'
+  pod 'TYAlertController', '~> 1.2.0'
+  pod 'YBAttributeTextTapAction', '~> 3.0.3'
+
+  pod 'Toast', '~> 4.0.0'
+  pod 'TXIMSDK_iOS', '~> 5.1.60'
+  pod 'TXLiteAVSDK_TRTC', '~> 8.6.10094'
+  pod 'ZLPhotoBrowser-objc', '~> 1.0.3'
+  
+#  pod 'AVEngine', :path => 'wfuikit/WFChatUIKit/AVEngine'
+  pod 'AFNetworking', :path => 'wfuikit/WFChatUIKit/Vendor/AFNetworking'
+  pod 'KxMenu', :path => 'wfuikit/WFChatUIKit/Vendor/KxMenu'
+  pod 'Pinyin', :path => 'wfuikit/WFChatUIKit/Vendor/Pinyin'
+  pod 'SDRefeshView', :path => 'wfuikit/WFChatUIKit/Vendor/SDRefeshView'
+  pod 'UITextViewPlaceholder', :path => 'wfuikit/WFChatUIKit/Vendor/UITextViewPlaceholder'
+  pod 'YLGIFImage', :path => 'wfuikit/WFChatUIKit/Vendor/YLGIFImage'
+
+  
+end
+
+target 'WFChatClient' do
+  project 'wfclient/WFChatClient.xcodeproj'
+    
+    pod 'Proto', :path => 'wfclient/WFChatClient/Proto'
+    pod 'amr', :path => 'wfclient/WFChatClient/amr'
+end
+
+
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+      if config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'].to_f < 12.1
+        config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '12.1'
+      end
+    end
+  end
+end

@@ -1,0 +1,19 @@
+{
+  "name": "YLGIFImage",
+  "version": "0.0.1",
+  "summary": "YLGIFImage",
+  "description": "YLGIFImage",
+  "license": "MIT",
+  "homepage": "http://tjos.com/seeyon/main.do",
+  "authors": {
+    "tojoy": "xxx@tojoy.com"
+  },
+  "source": {
+    "svn": "",
+    "tag": "0.0.1"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "**/*.{h,m}"
+}

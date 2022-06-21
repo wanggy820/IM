@@ -1,0 +1,1 @@
+../../../../wfuikit/WFChatUIKit/Vendor/YLGIFImage/YLGIFImage.h

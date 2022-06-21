@@ -1,0 +1,6 @@
+framework module Pinyin {
+  umbrella header "Pinyin-umbrella.h"
+
+  export *
+  module * { export * }
+}

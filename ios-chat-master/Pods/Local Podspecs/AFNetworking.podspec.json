@@ -1,0 +1,19 @@
+{
+  "name": "AFNetworking",
+  "version": "0.0.1",
+  "summary": "AFNetworking",
+  "description": "AFNetworking",
+  "license": "MIT",
+  "homepage": "http://tjos.com/seeyon/main.do",
+  "authors": {
+    "tojoy": "xxx@tojoy.com"
+  },
+  "source": {
+    "svn": "",
+    "tag": "0.0.1"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "*.{h,m}"
+}

@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-WFChatUIKit/Pods-WFChatUIKit-resources.sh
+${PODS_ROOT}/ZLPhotoBrowser-objc/ZLPhotoBrowser/PhotoBrowser/resource/ZLPhotoActionSheet.xib
+${PODS_ROOT}/ZLPhotoBrowser-objc/ZLPhotoBrowser/PhotoBrowser/resource/ZLPhotoBrowserCell.xib
+${PODS_ROOT}/ZLPhotoBrowser-objc/ZLPhotoBrowser/PhotoBrowser/resource/ZLPhotoBrowser.bundle

@@ -1,0 +1,97 @@
+PODS:
+  - AFNetworking (0.0.1)
+  - amr (0.0.1)
+  - Bugly (2.5.90)
+  - CCHMapClusterController (1.7.2)
+  - KxMenu (0.0.1)
+  - MBProgressHUD (1.2.0)
+  - Pinyin (0.0.1)
+  - Proto (0.0.1)
+  - SDRefeshView (0.0.1)
+  - SDWebImage (5.9.0):
+    - SDWebImage/Core (= 5.9.0)
+  - SDWebImage/Core (5.9.0)
+  - Toast (4.0.0)
+  - TXIMSDK_iOS (5.1.60)
+  - TXLiteAVSDK_TRTC (8.6.10094)
+  - TYAlertController (1.2.0)
+  - UITextViewPlaceholder (0.0.1)
+  - YBAttributeTextTapAction (3.0.3)
+  - YLGIFImage (0.0.1)
+  - ZLPhotoBrowser-objc (1.0.3):
+    - SDWebImage
+
+DEPENDENCIES:
+  - AFNetworking (from `wfuikit/WFChatUIKit/Vendor/AFNetworking`)
+  - amr (from `wfclient/WFChatClient/amr`)
+  - Bugly
+  - CCHMapClusterController (~> 1.7.2)
+  - KxMenu (from `wfuikit/WFChatUIKit/Vendor/KxMenu`)
+  - MBProgressHUD (~> 1.2.0)
+  - Pinyin (from `wfuikit/WFChatUIKit/Vendor/Pinyin`)
+  - Proto (from `wfclient/WFChatClient/Proto`)
+  - SDRefeshView (from `wfuikit/WFChatUIKit/Vendor/SDRefeshView`)
+  - SDWebImage
+  - Toast (~> 4.0.0)
+  - TXIMSDK_iOS (~> 5.1.60)
+  - TXLiteAVSDK_TRTC (~> 8.6.10094)
+  - TYAlertController (~> 1.2.0)
+  - UITextViewPlaceholder (from `wfuikit/WFChatUIKit/Vendor/UITextViewPlaceholder`)
+  - YBAttributeTextTapAction (~> 3.0.3)
+  - YLGIFImage (from `wfuikit/WFChatUIKit/Vendor/YLGIFImage`)
+  - ZLPhotoBrowser-objc (~> 1.0.3)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Bugly
+    - CCHMapClusterController
+    - MBProgressHUD
+    - SDWebImage
+    - Toast
+    - TXIMSDK_iOS
+    - TXLiteAVSDK_TRTC
+    - TYAlertController
+    - YBAttributeTextTapAction
+    - ZLPhotoBrowser-objc
+
+EXTERNAL SOURCES:
+  AFNetworking:
+    :path: wfuikit/WFChatUIKit/Vendor/AFNetworking
+  amr:
+    :path: wfclient/WFChatClient/amr
+  KxMenu:
+    :path: wfuikit/WFChatUIKit/Vendor/KxMenu
+  Pinyin:
+    :path: wfuikit/WFChatUIKit/Vendor/Pinyin
+  Proto:
+    :path: wfclient/WFChatClient/Proto
+  SDRefeshView:
+    :path: wfuikit/WFChatUIKit/Vendor/SDRefeshView
+  UITextViewPlaceholder:
+    :path: wfuikit/WFChatUIKit/Vendor/UITextViewPlaceholder
+  YLGIFImage:
+    :path: wfuikit/WFChatUIKit/Vendor/YLGIFImage
+
+SPEC CHECKSUMS:
+  AFNetworking: 03cc1997c69f63619122b68197636744c65c6d2d
+  amr: 4a399104b5369c637b6d36bf370489f6a17fd91b
+  Bugly: 88bc32c0acc6fef7b74d610f0319ee7560d6b9fe
+  CCHMapClusterController: 682e1eb1373a7decda1b75fd7b24b3047fed9daa
+  KxMenu: aa904f4f793fb498016a85f37b3566e191c35260
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  Pinyin: dcb5382e17339fdf45f59c4ff0657544d631d1e5
+  Proto: 87c5c451532192a96d686c512b1c5b9a25dc0ce0
+  SDRefeshView: 32b777146ee7cea8b67e5b49bf4a91af0f7d1cd6
+  SDWebImage: 62ae4a18473520c67b79e9724c31a63599cc9423
+  Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
+  TXIMSDK_iOS: 015557374d46a549ec63f298e76d1aaf38611284
+  TXLiteAVSDK_TRTC: 2ac893645cde6ac353e5374d0b8fb08ec34f2fb8
+  TYAlertController: c121090edb0bea7426f987da94cdddd81eef4231
+  UITextViewPlaceholder: b8a741e8e8471bba9221fbda232c2b8311c9a788
+  YBAttributeTextTapAction: b7e61f0265b5673e7ce7bad7319e8eff9e209a2b
+  YLGIFImage: 333d16d589af9fed4eb5786795ea8dd15ac5b40a
+  ZLPhotoBrowser-objc: de73eb06fbd171a7c7e51cf8b181f506bcf09e94
+
+PODFILE CHECKSUM: 670f20c82e459b5154c46c7a39bdf667597dc218
+
+COCOAPODS: 1.10.1

@@ -1,0 +1,6 @@
+framework module SDRefeshView {
+  umbrella header "SDRefeshView-umbrella.h"
+
+  export *
+  module * { export * }
+}
